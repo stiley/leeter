@@ -3,13 +3,13 @@ Leeter
 
 Simple projram to replace certain letters with the mapping below:
 
-[a,A] -> 4
-[e,E] -> 3
-[i,I] -> 1
-[o,O] -> 0
-[s,S] -> 5
-[t,T] -> 7
-[b,D] -> 5
+[a,A] -> 4<br>
+[e,E] -> 3<br>
+[i,I] -> 1<br>
+[o,O] -> 0<br>
+[s,S] -> 5<br>
+[t,T] -> 7<br>
+[b,D] -> 5<br>
 
 Note: [o,O] is not an owl face, it's the letter "o" and it should be replaced with a zero.
 
