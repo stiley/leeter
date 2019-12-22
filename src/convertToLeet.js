@@ -9,7 +9,7 @@
  * @param stringToBeConverted - the string to be converted to the leet
  * @returns {string}
  */
-module.exports = function convertToLeet(stringToBeConverted) {
+exports.convertToLeet = function(stringToBeConverted) {
     let convertedString = "";
 
     if(stringToBeConverted) {
@@ -23,10 +23,70 @@ module.exports = function convertToLeet(stringToBeConverted) {
             .replace(/[D]/g, "5")
             .replace(/[b]/g, "5")
     }
+    console.log(`Converted ${stringToBeConverted}   ==>   ${convertedString}`)
     return convertedString;
 };
 
+//[1,3,4,5,6,9]
+
+exports.findNumbers = function(arrayOfNums, targetSum){
+    let sum=0;
+    for(let count=0; count<arrayOfNums.length; count++){
+        for(let idx2=count+1; idx2<arrayOfNums.length; idx2++){
+            sum =arrayOfNums[count] + arrayOfNums[idx2];
+            if(sum == targetSum) {
+                console.log(`Found ints to add to target ${arrayOfNums[count]} and ${arrayOfNums[idx2]}`)
+                return [ arrayOfNums[count], arrayOfNums[idx2]];
+            }
+        }
+    }
+    return "Sorry";
+}
 
 
+/**
+ *
+ * @param numerator
+ * @param denominator
+ */
+exports.psuedoDivision = function(numerator, denominator) {
+    let returnVal;
+    let newNumerator = Math.abs(numerator);
+    let newDenom = Math.abs(denominator);
+
+    if(newNumerator === newDenom){
+        returnVal = 1;
+    }
+    else if(newNumerator < newDenom){
+        returnVal = 0;
+    }
+    else{ // lets try division
+        let count = 1;
+        let done = false;
+        let currentAnswer = newNumerator - newDenom;
+        // console.log(`currentAnswer=${currentAnswer}`)
+        // console.log("---"+currentAnswer)
+        while(!done){
+            count +=1;
+            currentAnswer -= newDenom;
+            // console.log(`currentAnswer=${currentAnswer}`)
+            if(currentAnswer < 0){
+                console.log(`done`)
+                count -=1;
+                done = true;
+            }
+        }
+        returnVal = count;
+    }
+    // deal with possibly negative numbers
+    if(numerator < 0 || denominator < 0)
+    {
+        returnVal *=-1;
+    }
+
+    return returnVal;
+};
 
 
+// findNumbers([1,3,4,5,6],13)
+// console.log("here")
