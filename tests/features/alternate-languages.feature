@@ -1,3 +1,4 @@
+@leet-test
 Feature: Conversion to Leet - non english characters
   As a person who requires some phrases to be converted to a leet
   I want to ensure the function properly handles non english characters

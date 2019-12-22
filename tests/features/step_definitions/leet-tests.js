@@ -6,10 +6,16 @@ const leeter = require('../../../src/convertToLeet.js');
 
 let target;
 
+/**
+ *
+ */
 When('I convert {string} to a leet', function (stringToBeConverted) {
-    target = leeter(stringToBeConverted);
+    target = leeter.convertToLeet(stringToBeConverted);
 });
 
+/**
+ *
+ */
 Then('the converted phrase should match {string}', function(expectedResult){
     target.should.equal(expectedResult);
 });
