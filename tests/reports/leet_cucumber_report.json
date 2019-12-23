@@ -1,26 +1,26 @@
 [
   {
-    "description": "  As a person who requires some basic division\n  I want to ensure the function properly calculated thew quotient using other methids than division\n  So that I can test my programming skills",
+    "description": "  As a person who requires some information about patents a company may hold\n  I want to ensure the search works as expected\n  So that I can rely on the api response to further my analysis",
     "keyword": "Feature",
-    "name": "Conversion to Leet - Regular English",
-    "line": 5,
-    "id": "conversion-to-leet---regular-english",
+    "name": "Check for USPTO patents based on Company name",
+    "line": 3,
+    "id": "check-for-uspto-patents-based-on-company-name",
     "tags": [
       {
-        "name": "@findnums-test",
+        "name": "@findpatents-test",
         "line": 1
       }
     ],
-    "uri": "features\\step_definitions\\find-nums.feature",
+    "uri": "features\\patent.feature",
     "elements": [
       {
-        "id": "conversion-to-leet---regular-english;",
+        "id": "check-for-uspto-patents-based-on-company-name;",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 16,
         "name": "",
         "tags": [
           {
-            "name": "@findnums-test",
+            "name": "@findpatents-test",
             "line": 1
           }
         ],
@@ -29,27 +29,109 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "I pass the array os integers \"1,2,3,4,5,6\" and look for the sum of \"11\"",
+            "line": 10,
+            "name": "I search for the company \"Ford Motor Company\"",
             "match": {
-              "location": "features\\step_definitions\\search-tests.js:15"
+              "location": "features\\step_definitions\\patent-tests.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 335000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
-            "name": "The system should identify the result as \"5,6\"",
+            "line": 11,
+            "name": "The system should indicate the company has patents as \"true\"",
             "match": {
-              "location": "features\\step_definitions\\search-tests.js:25"
+              "location": "features\\step_definitions\\patent-tests.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-for-uspto-patents-based-on-company-name;",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "",
+        "tags": [
+          {
+            "name": "@findpatents-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search for the company \"ZASAAS\"",
+            "match": {
+              "location": "features\\step_definitions\\patent-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The system should indicate the company has patents as \"false\"",
+            "match": {
+              "location": "features\\step_definitions\\patent-tests.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-for-uspto-patents-based-on-company-name;",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "",
+        "tags": [
+          {
+            "name": "@findpatents-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search for the company \"zxccsdvf\"",
+            "match": {
+              "location": "features\\step_definitions\\patent-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 406000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The system should indicate the company has patents as \"dstg\"",
+            "match": {
+              "location": "features\\step_definitions\\patent-tests.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

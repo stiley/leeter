@@ -6,7 +6,8 @@
     "test": "npm run test-leet && node generateReport",
     "test-leet": "./node_modules/.bin/cucumber-js --tags @leet-test -f json:reports/leet_cucumber_report.json",
     "test-division": "./node_modules/.bin/cucumber-js --tags @division-test -f json:reports/leet_cucumber_report.json",
-    "test-findNums": "./node_modules/.bin/cucumber-js --tags @findnums-test -f json:reports/leet_cucumber_report.json"
+    "test-findNums": "./node_modules/.bin/cucumber-js --tags @findnums-test -f json:reports/leet_cucumber_report.json",
+    "test-findPatents": "./node_modules/.bin/cucumber-js --tags @findpatents-test -f json:reports/leet_cucumber_report.json"
   },
   "author": "Sean T",
   "license": "FREE-WARE",
