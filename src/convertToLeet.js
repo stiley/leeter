@@ -29,6 +29,16 @@ exports.convertToLeet = function(stringToBeConverted) {
 
 //[1,3,4,5,6,9]
 
+/**
+ * Simple method that takes an array of integers and a target number
+ * The goal is to find 2 numbers in the array that sum to the target number
+ *
+ * If two numbers are found to satisfy the requirement, they are returned and an array
+ * Otherwise an empty array is returned
+ * @param arrayOfNums
+ * @param targetSum
+ * @returns {string|*[]}
+ */
 exports.findNumbers = function(arrayOfNums, targetSum){
     let sum=0;
     for(let count=0; count<arrayOfNums.length; count++){
@@ -40,7 +50,7 @@ exports.findNumbers = function(arrayOfNums, targetSum){
             }
         }
     }
-    return "Sorry";
+    return [];
 }
 
 
@@ -50,12 +60,20 @@ exports.findNumbers = function(arrayOfNums, targetSum){
  * @param denominator
  */
 exports.psuedoDivision = function(numerator, denominator) {
+    console.log(`processing ${numerator} / ${denominator}`)
     let returnVal;
+    // lets deal with numbers > 0 and deal with sign later
     let newNumerator = Math.abs(numerator);
     let newDenom = Math.abs(denominator);
 
+    let multiplier = -1;
+
+    if((numerator < 0 && denominator < 0) ||(numerator > 0 && denominator>0)){
+        multiplier  =1
+    }
+
     if(newNumerator === newDenom){
-        returnVal = 1;
+        returnVal = 1 * multiplier;
     }
     else if(newNumerator < newDenom){
         returnVal = 0;
@@ -68,8 +86,8 @@ exports.psuedoDivision = function(numerator, denominator) {
         // console.log("---"+currentAnswer)
         while(!done){
             count +=1;
-            currentAnswer -= newDenom;
-            // console.log(`currentAnswer=${currentAnswer}`)
+             currentAnswer -= newDenom;
+             console.log(`currentAnswer=${currentAnswer}`)
             if(currentAnswer < 0){
                 console.log(`done`)
                 count -=1;
@@ -79,14 +97,6 @@ exports.psuedoDivision = function(numerator, denominator) {
         returnVal = count;
     }
     // deal with possibly negative numbers
-    if(numerator < 0 || denominator < 0)
-    {
-        returnVal *=-1;
-    }
 
-    return returnVal;
+    return returnVal*multiplier;
 };
-
-
-// findNumbers([1,3,4,5,6],13)
-// console.log("here")

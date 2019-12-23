@@ -10,7 +10,7 @@ const baseURL = 'https://developer.uspto.gov/ibd-api/v1/patent/application?searc
  * @param companyName
  * @returns {Promise<boolean>}
  */
-exports.getPatents = async  function(companyName){
+exports.getPatents = async function(companyName){
 
     let hasPatents = false;
     const instance = axios.create({

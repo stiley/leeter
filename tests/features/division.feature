@@ -20,3 +20,5 @@ Feature: Conversion to Leet - Regular English
       | 12        | 11          | 1      |
       | -15       | 5           | -3     |
       | 9         | -2          | -4     |
+      | -9        | -2          | 4      |
+      | 0         | -2          | 0      |

@@ -1,26 +1,67 @@
 [
   {
-    "description": "  As a person who requires some information about patents a company may hold\n  I want to ensure the search works as expected\n  So that I can rely on the api response to further my analysis",
+    "description": "  As a person who requires some basic division\n  I want to ensure the function properly calculated thew quotient using other methids than division\n  So that I can test my programming skills",
     "keyword": "Feature",
-    "name": "Check for USPTO patents based on Company name",
+    "name": "Conversion to Leet - Regular English",
     "line": 3,
-    "id": "check-for-uspto-patents-based-on-company-name",
+    "id": "conversion-to-leet---regular-english",
     "tags": [
       {
-        "name": "@findpatents-test",
+        "name": "@division-test",
         "line": 1
       }
     ],
-    "uri": "features\\patent.feature",
+    "uri": "features\\division.feature",
     "elements": [
       {
-        "id": "check-for-uspto-patents-based-on-company-name;",
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 3 by 3",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to 1",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
         "keyword": "Scenario",
         "line": 16,
         "name": "",
         "tags": [
           {
-            "name": "@findpatents-test",
+            "name": "@division-test",
             "line": 1
           }
         ],
@@ -30,38 +71,37 @@
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "I search for the company \"Ford Motor Company\"",
+            "name": "I divide 17 by 17",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:11"
+              "location": "features\\step_definitions\\division-tests.js:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 335000000
+              "status": "passed"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "The system should indicate the company has patents as \"true\"",
+            "name": "The response should be equal to 1",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:16"
+              "location": "features\\step_definitions\\division-tests.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "check-for-uspto-patents-based-on-company-name;",
+        "id": "conversion-to-leet---regular-english;",
         "keyword": "Scenario",
         "line": 17,
         "name": "",
         "tags": [
           {
-            "name": "@findpatents-test",
+            "name": "@division-test",
             "line": 1
           }
         ],
@@ -71,38 +111,36 @@
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "I search for the company \"ZASAAS\"",
+            "name": "I divide 12 by 17",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:11"
+              "location": "features\\step_definitions\\division-tests.js:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 362000000
+              "status": "passed"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "The system should indicate the company has patents as \"false\"",
+            "name": "The response should be equal to 0",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:16"
+              "location": "features\\step_definitions\\division-tests.js:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
       },
       {
-        "id": "check-for-uspto-patents-based-on-company-name;",
+        "id": "conversion-to-leet---regular-english;",
         "keyword": "Scenario",
         "line": 18,
         "name": "",
         "tags": [
           {
-            "name": "@findpatents-test",
+            "name": "@division-test",
             "line": 1
           }
         ],
@@ -112,26 +150,263 @@
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "I search for the company \"zxccsdvf\"",
+            "name": "I divide 3 by 2",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:11"
+              "location": "features\\step_definitions\\division-tests.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 406000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "The system should indicate the company has patents as \"dstg\"",
+            "name": "The response should be equal to 1",
             "match": {
-              "location": "features\\step_definitions\\patent-tests.js:16"
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 15 by 3",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
             },
             "result": {
               "status": "passed",
               "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to 5",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 12 by 11",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to 1",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide -15 by 5",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to -3",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 9 by -2",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to -4",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide -9 by -2",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to 4",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversion-to-leet---regular-english;",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "",
+        "tags": [
+          {
+            "name": "@division-test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 0 by -2",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:11"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The response should be equal to 0",
+            "match": {
+              "location": "features\\step_definitions\\division-tests.js:17"
+            },
+            "result": {
+              "status": "passed"
             }
           }
         ]

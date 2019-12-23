@@ -1,0 +1,27 @@
+{
+  "name": "leeter",
+  "version": "1.0.0",
+  "description": "Leeter",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stiley/leeter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stiley/leeter/issues"
+  },
+  "homepage": "https://github.com/stiley/leeter#readme"
+}
